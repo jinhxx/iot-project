@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.gps_box {
+    margin: 0 auto;
+    width: 65%;
+    height: 560px;
+    text-align: center;
+    background-color: #e5e5e5
+}
+
+.io_cap_box{
+    width:100%;
+}
+
+.auto_box{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.io_box {
+    background-color: #e5e5e5;
+    float: left;
+    width: 500px;
+    height: 550px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-right:80px;
+    text-align: center;
+
+}
+
+.cap_box {
+    background-color: #e5e5e5;
+    float: left;
+    width: 500px;
+    height: 550px;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+   
+}
+
+@media only screen and (max-width: 1100px) {
+    /* For mobile phones: */
+    .io_box, .cap_box {
+      width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .gps_box, .io_cap_box, .io_box, .cap_box {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>header</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="gps_box">
+<h2>GPS</h2>
+  </div>
+
+<div class = "io_cap_box">
+    <div class = "auto_box">
+    <div class="io_box">
+        <h2>io_box</h2>
+        <p>box_1</p>
+    </div>
+
+    <div class="cap_box">
+        <h2>cap_box</h2>
+        <p>box_2</p>
+    </div>
+    </div>
+    </div><!--auto_box-->
+</div><!--io_cap_box-->
+
+<div style=
+"background-color:#e5e5e5;text-align:center;
+padding:60px;
+margin-top:30px;">
+Push box</div>
+
+<script>
+  function fcm() {
+    console.log("push");
+  }
+</script>
+
+</body>
+</html>
+
